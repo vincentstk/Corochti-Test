@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     #region Component Configs
 
+    // SYstems is modules represent for entity bahaviors.
     private PlayerInputCallbackSystem _inputSystem;
     private PlayerController _movementSystem;
     private Health _healthSystem;
@@ -71,6 +72,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Reduce unity event call for performance
         _healthSystem.Init(_hudSystem);
         _audioSystem.Init();
         _animationSystem.Init();
