@@ -1,0 +1,5 @@
+{
+  "maxHp" : 3,
+  "takeOffSpeed": 5,
+  "flySpeedIncreaseStep":0.5
+}
